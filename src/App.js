@@ -34,11 +34,13 @@ const StarMatch = () => {
   const [secondsLeft, setSecondsLeft] = React.useState(10);
 
   React.useEffect(() => {
-    setTimeout(() => {
-      setSecondsLeft(secondsLeft - 1);
-    }, 1000)
-  });
-
+    if (secondsLeft > 0) {
+      const timeId = setTimeout(() => {
+        setSecondsLeft(secondsLeft - 1);
+        }, 1000);
+        return () => clearTimeout(timeId);
+    }
+  }); 
   const candidatesAreWrong = utils.sum(candidateNums) > stars;
   const gameIsDone = availableNums.length === 0;
 
