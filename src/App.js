@@ -3,6 +3,11 @@ import logo from './logo.svg';
 import './App.css';
 // import { start } from 'repl';
 
+const PlayButton = props => (
+  <button className='number' onClick={() => console.log('Num', props.number)}>
+    {props.number}
+  </button>
+);
 
 const StarMatch = () => {
   const [stars, setStars] = React.useState(utils.random(1, 9));
@@ -19,7 +24,7 @@ const StarMatch = () => {
         </div>
         <div className="right"> 
           {utils.range(1, 9).map(buttonId => 
-            <button key={buttonId} className='number'>{buttonId}</button>
+            <PlayButton key={buttonId}  number={buttonId}/>
           )}
         </div>
       </div>
