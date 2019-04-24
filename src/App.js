@@ -42,7 +42,8 @@ const StarMatch = () => {
     }
   }); 
   const candidatesAreWrong = utils.sum(candidateNums) > stars;
-  const gameIsDone = availableNums.length === 0;
+  const gameIsWon = availableNums.length === 0;
+  
 
   const resetGame = () => {
     setStars(utils.random(1, 9));
