@@ -32,7 +32,7 @@ const PlayAgain = props => (
   </div>
 );
 
-const StarMatch = () => {
+const Game = (props) => {
   const [stars, setStars] = React.useState(utils.random(1, 9));
   const [availableNums, setAvailableNums] = React.useState(utils.range(1, 9));
   const [candidateNums, setCandidateNums] = React.useState([]);
