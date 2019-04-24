@@ -23,6 +23,20 @@ const PlayButton = props => (
 
 const StarMatch = () => {
   const [stars, setStars] = React.useState(utils.random(1, 9));
+  const [availableNums, setAvaliableNums] = React.useState([1, 2, 3, 4, 5]);
+  const [candidateNums, setCandidateNums] = React.useState([2, 3]);
+
+  const candidateAreWrong = utils.sum(candidateNums) > stars;
+
+  const numberStatus = (number) => {
+    if (!availableNums.includes(number)) {
+      return 'used';
+    }
+    if (candidateNums.includes(number)) {
+      return candidateAreWrong ? 'wrong' : 'candidate';
+    }
+  }
+
   return (
     <div className="game">
       <div className="help">
