@@ -70,7 +70,7 @@ const StarMatch = () => {
           {gameIsDone ? (
             <PlayAgain onClick={resetGame}/>
            ) : (
-          <StarsDisplay count={stars}/>
+            <StarsDisplay count={stars}/>
         </div>
         <div className="right"> 
           {utils.range(1, 9).map(number => 
