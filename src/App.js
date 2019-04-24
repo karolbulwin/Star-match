@@ -39,7 +39,7 @@ const StarMatch = () => {
   const [secondsLeft, setSecondsLeft] = React.useState(10);
 
   React.useEffect(() => {
-    if (secondsLeft > 0) {
+    if (secondsLeft > 0 && availableNums.length > 0) {
       const timeId = setTimeout(() => {
         setSecondsLeft(secondsLeft - 1);
         }, 1000);
