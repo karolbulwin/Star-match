@@ -23,7 +23,7 @@ const PlayButton = props => (
 
 const StarMatch = () => {
   const [stars, setStars] = React.useState(utils.random(1, 9));
-  const [availableNums, setAvaliableNums] = React.useState(utils.range(1, 9));
+  const [availableNums, setAvailableNums] = React.useState(utils.range(1, 9));
   const [candidateNums, setCandidateNums] = React.useState([]);
 
   const candidateAreWrong = utils.sum(candidateNums) > stars;
