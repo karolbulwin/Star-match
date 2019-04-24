@@ -5,7 +5,7 @@ import './App.css';
 
 
 const StarMatch = () => {
-  const starts = utils.random(1, 9);
+  const [stars, setStars] = React.useState(utils.random(1, 9));
   return (
     <div className="game">
       <div className="help">
@@ -13,11 +13,11 @@ const StarMatch = () => {
       </div>
       <div className="body">
         <div className="left">
-          {utils.range(1, starts).map(startId => 
+          {utils.range(1, stars).map(startId => 
             <div key={startId} className='star'/>
           )}
         </div>
-        <div className="right">
+        <div className="right"> 
           {utils.range(1, 9).map(buttonId => 
             <button key={buttonId} className='number'>{buttonId}</button>
           )}
