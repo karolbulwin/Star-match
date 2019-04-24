@@ -55,6 +55,7 @@ const StarMatch = () => {
     setStars(utils.random(1, 9));
     setAvailableNums(utils.range(1, 9));
     setCandidateNums([]);
+    setSecondsLeft(10);
   }
 
   const numberStatus = (number) => {
