@@ -27,6 +27,7 @@ const StarMatch = () => {
   const [candidateNums, setCandidateNums] = React.useState([]);
 
   const candidatesAreWrong = utils.sum(candidateNums) > stars;
+  const gameIsDone = availableNums.length === 0;
 
   const numberStatus = (number) => {
     if (!availableNums.includes(number)) {
