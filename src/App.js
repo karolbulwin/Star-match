@@ -3,6 +3,14 @@ import logo from './logo.svg';
 import './App.css';
 // import { start } from 'repl';
 
+const StarsDisplay = props => (
+  <>
+    {utils.range(1, props.count).map(startId => 
+      <div key={startId} className='star'/>
+    )}
+  </>
+)
+
 const PlayButton = props => (
   <button className='number' onClick={() => console.log('Num', props.number)}>
     {props.number}
@@ -18,9 +26,7 @@ const StarMatch = () => {
       </div>
       <div className="body">
         <div className="left">
-          {utils.range(1, stars).map(startId => 
-            <div key={startId} className='star'/>
-          )}
+          <StarsDisplay count={stars}/>
         </div>
         <div className="right"> 
           {utils.range(1, 9).map(buttonId => 
