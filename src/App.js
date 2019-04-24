@@ -29,8 +29,12 @@ const StarMatch = () => {
           <StarsDisplay count={stars}/>
         </div>
         <div className="right"> 
-          {utils.range(1, 9).map(buttonId => 
-            <PlayButton key={buttonId}  number={buttonId}/>
+          {utils.range(1, 9).map(number => 
+            <PlayButton
+            key={number}
+            number={number}
+            status={numberStatus(number)}
+            />
           )}
         </div>
       </div>
