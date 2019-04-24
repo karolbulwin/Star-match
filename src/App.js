@@ -33,7 +33,29 @@ const StarMatch = () => {
       return 'used';
     }
     if (candidateNums.includes(number)) {
-      return candidateAreWrong ? 'wrong' : 'candidate';
+      return candidatesAreWrong ? 'wrong' : 'candidate';
+    }
+    return 'available';
+  }
+
+  const onNumberClick = (number, currentStatus) => {
+    if (currentStatus === 'used') {
+      return;
+    }
+
+    const newCandidateNums =
+      currentStatus === 'available'
+        ? candidateNums.concat(number)
+        : candidateNums.filter(cn => cn !== number);
+    if (utils.sum(newCandidateNums) !== stars) {
+      setCandidateNums(newCandidateNums);
+    } else {
+      const newavailableNums = availableNums.filter(
+        num => !newCandidateNums.includes(num)
+      );
+      setStars(utils.randomSumIn(newavailableNums, 9));
+      setAvailableNums(newavailableNums);
+      setCandidateNums([]);
     }
   }
 
