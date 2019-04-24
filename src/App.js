@@ -29,6 +29,12 @@ const StarMatch = () => {
   const candidatesAreWrong = utils.sum(candidateNums) > stars;
   const gameIsDone = availableNums.length === 0;
 
+  const resetGame = () => {
+    setStars(utils.random(1, 9));
+    setAvailableNums(utils.range(1, 9));
+    setCandidateNums([]);
+  }
+
   const numberStatus = (number) => {
     if (!availableNums.includes(number)) {
       return 'used';
