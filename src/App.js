@@ -52,6 +52,7 @@ const StarMatch = () => {
             key={number}
             number={number}
             status={numberStatus(number)}
+            onClick={onNumberClick}
             />
           )}
         </div>
