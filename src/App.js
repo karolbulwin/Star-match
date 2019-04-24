@@ -67,6 +67,9 @@ const StarMatch = () => {
       </div>
       <div className="body">
         <div className="left">
+          {gameIsDone ? (
+            <PlayAgain onClick={resetGame}/>
+           ) : (
           <StarsDisplay count={stars}/>
         </div>
         <div className="right"> 
