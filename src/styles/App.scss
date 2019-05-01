@@ -104,4 +104,17 @@ button {
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
+  background-color: lighten($color: $primary, $amount: 65%);
+  &:focus {
+    outline: goldenrod groove 2px;
+    outline-offset: 1px;
+  }
+  @media not all and (hover: none) {
+    &:hover:not(:disabled) {
+      background-color: lighten($color: $primary, $amount: 60%);
+    }
+  }
+  &:active:not(:disabled) {
+    background-color: lighten($color: $primary, $amount: 50%);
+  }
 }
