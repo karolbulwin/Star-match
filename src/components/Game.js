@@ -54,6 +54,7 @@ export const Game = props => {
               number={number}
               status={numberStatus(number)}
               onClick={onNumberClick}
+              disabled={gameStatus === "lost" ? true : false}
             />
           ))}
         </div>

@@ -5,6 +5,7 @@ export const PlayButton = props => (
     className="number"
     style={{ backgroundColor: colors[props.status] }}
     onClick={() => props.onClick(props.number, props.status)}
+    disabled={props.disabled}
   >
     {props.number}
   </button>
