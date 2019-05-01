@@ -5,14 +5,35 @@ export const useGameState = () => {
   const [availableNums, setAvailableNums] = React.useState(utils.range(1, 9));
   const [candidateNums, setCandidateNums] = React.useState([]);
   const [secondsLeft, setSecondsLeft] = React.useState(10);
-  React.useEffect(() => {
-    if (secondsLeft > 0 && availableNums.length > 0) {
-      const timeId = setTimeout(() => {
+
+  const Counter = () => {
+    useInterval(() => {
+      if (secondsLeft > 0 && availableNums.length > 0) {
         setSecondsLeft(secondsLeft - 1);
-      }, 1000);
-      return () => clearTimeout(timeId);
-    }
-  });
+      }
+    }, 1000);
+  };
+
+  function useInterval(callback, delay) {
+    const savedCallback = React.useRef();
+
+    // Remember the latest function.
+    React.useEffect(() => {
+      savedCallback.current = callback;
+    }, [callback]);
+
+    // Set up the interval.
+    React.useEffect(() => {
+      function tick() {
+        savedCallback.current();
+      }
+      if (delay !== null) {
+        let id = setInterval(tick, delay);
+        return () => clearInterval(id);
+      }
+    }, [delay]);
+  }
+
   const setGameState = newCandidateNums => {
     if (utils.sum(newCandidateNums) !== stars) {
       setCandidateNums(newCandidateNums);
@@ -25,5 +46,7 @@ export const useGameState = () => {
       setCandidateNums([]);
     }
   };
+
+  Counter();
   return { stars, availableNums, candidateNums, secondsLeft, setGameState };
 };
