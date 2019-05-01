@@ -1,0 +1,84 @@
+.App {
+  text-align: center;
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+      height: 40vmin;
+      pointer-events: none;
+    }
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.game-container {
+  padding: 1em;
+  .info {
+    padding: 1em 0;
+  }
+  .game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    > div {
+      padding: 0.4em;
+    }
+    .stars-board {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 9em;
+      min-height: 9em;
+      .star {
+        display: inline-block;
+        margin: 0.25em;
+        text-shadow: 0 0 10px black;
+      }
+      .star:after {
+        content: "\2605";
+        font-size: 2em;
+      }
+      .game-done {
+        .message {
+          font-size: 2.2em;
+          margin-bottom: 0.2em;
+        }
+        button {
+          font-size: 1em;
+          border-radius: 0.2em;
+          padding: 0.5em 1em;
+        }
+      }
+    }
+    .num-board {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-gap: 0.2em;
+      width: 9em;
+      min-height: 9em;
+      .number {
+        font-size: 1em;
+        border-radius: 0.2em;
+      }
+    }
+  }
+  .timer {
+    padding: 1em 0;
+  }
+}
