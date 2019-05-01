@@ -6,8 +6,7 @@ import { StarMatch } from "./StarMatch";
 function App() {
   return (
     <div className="App">
-      <main className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <main className="App-main">
         <StarMatch />
       </main>
     </div>
