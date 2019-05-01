@@ -35,19 +35,19 @@ export const Game = props => {
     setGameState(newCandidateNums);
   };
   return (
-    <div className="game">
-      <div className="help">
+    <div className="game-container">
+      <div className="info">
         Pick 1 or more numbers that sum to the number of stars
       </div>
-      <div className="body">
-        <div className="left">
+      <div className="game">
+        <div className="stars-board">
           {gameStatus !== "active" ? (
             <PlayAgain onClick={props.startNewGame} gameStatus={gameStatus} />
           ) : (
             <StarsDisplay count={stars} />
           )}
         </div>
-        <div className="right">
+        <div className="num-board">
           {utils.range(1, 9).map(number => (
             <PlayButton
               key={number}
