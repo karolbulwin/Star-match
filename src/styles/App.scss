@@ -74,6 +74,13 @@
       .number {
         font-size: 1em;
         border-radius: 0.2em;
+        border-style: none;
+        box-shadow: inset 0 0 1px 1px black;
+        font-weight: bold;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+          "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+          "Helvetica Neue", sans-serif;
+        -webkit-font-smoothing: antialiased;
       }
     }
   }
