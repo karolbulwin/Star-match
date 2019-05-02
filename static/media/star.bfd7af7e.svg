@@ -1,0 +1,15 @@
+<svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <rect x="-1" y="-1" width="12.666645" height="12.666645" id="canvas_background" fill="none"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path fill="none" stroke-width="4" stroke-opacity="null" fill-opacity="null" d="m6.1,26.2l19.8,0l6.1,-18.8l6.1,18.8l19.8,0l-16,11.6l6.1,18.8l-16,-11.6l-16,11.6l6.1,-18.8l-16,-11.6z" id="svg_1" stroke-dasharray="5,5" stroke="#daa520"/>
+  <path stroke="#d29500" stroke-dasharray="2,2" fill="none" stroke-width="3" stroke-opacity="null" fill-opacity="null" d="m17.999999,29.984104l10.595614,0l3.316888,-10.042799l3.316888,10.042799l10.595614,0l-8.568627,6.173097l3.316888,10.042799l-8.568627,-6.173097l-8.568627,6.173097l3.316888,-10.042799l-8.568627,-6.173097l-0.184272,0z" id="svg_2"/>
+  <path fill="none" stroke-opacity="null" fill-opacity="null" d="m1.075001,24.6l23.5,0l7.3,-22.3l7.3,22.3l23.5,0l-19,13.8l7.3,22.3l-19,-13.8l-19,13.8l7.3,-22.3l-19,-13.8l-0.2,0z" id="svg_3" stroke="#bf8d11"/>
+  <path stroke="#bf8d11" stroke-dasharray="2,2" fill="none" stroke-opacity="null" fill-opacity="null" d="m-0.418384,24.270551l24.734807,0l7.683578,-23.364752l7.683578,23.364752l24.734807,0l-19.998354,14.458905l7.683578,23.364752l-19.998354,-14.458905l-19.998354,14.458905l7.683578,-23.364752l-19.998354,-14.458905l-0.210509,0z" id="svg_4"/>
+ </g>
+</svg>

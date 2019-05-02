@@ -1,0 +1,43 @@
+{
+  "lang": "en",
+  "dir": "ltr",
+  "short_name": "Star match",
+  "name": "Star match",
+  "description": "Offline game. Improve counting to ten",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "./images/icons/favicon-16.png",
+      "sizes": "16x16"
+    },
+    {
+      "src": "./images/icons/favicon-64.png",
+      "sizes": "64x64"
+    },
+    {
+      "src": "./images/icons/favicon-128.png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "./images/icons/favicon-144.png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "./images/icons/favicon-192.png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./images/icons/favicon-512.png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "orientation": "portrait",
+  "display": "fullscreen",
+  "theme_color": "#282c34",
+  "background_color": "#282c34"
+}
