@@ -1,15 +1,43 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "lang": "en",
+  "dir": "ltr",
+  "short_name": "Star match",
+  "name": "Star match",
+  "description": "Offline game. Improve counting to ten",
   "icons": [
     {
       "src": "favicon.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
+    },
+    {
+      "src": "./icons/favicon-16.png",
+      "sizes": "16x16"
+    },
+    {
+      "src": "./icons/favicon-64.png",
+      "sizes": "64x64"
+    },
+    {
+      "src": "./icons/favicon-128.png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "./icons/favicon-144.png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "./icons/favicon-192.png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./icons/favicon-512.png",
+      "sizes": "512x512"
     }
   ],
   "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "orientation": "portrait",
+  "display": "fullscreen",
+  "theme_color": "#282c34",
+  "background_color": "#282c34"
 }
