@@ -11,27 +11,27 @@
       "type": "image/x-icon"
     },
     {
-      "src": "./icons/favicon-16.png",
+      "src": "./images/icons/favicon-16.png",
       "sizes": "16x16"
     },
     {
-      "src": "./icons/favicon-64.png",
+      "src": "./images/icons/favicon-64.png",
       "sizes": "64x64"
     },
     {
-      "src": "./icons/favicon-128.png",
+      "src": "./images/icons/favicon-128.png",
       "sizes": "128x128"
     },
     {
-      "src": "./icons/favicon-144.png",
+      "src": "./images/icons/favicon-144.png",
       "sizes": "144x144"
     },
     {
-      "src": "./icons/favicon-192.png",
+      "src": "./images/icons/favicon-192.png",
       "sizes": "192x192"
     },
     {
-      "src": "./icons/favicon-512.png",
+      "src": "./images/icons/favicon-512.png",
       "sizes": "512x512"
     }
   ],
