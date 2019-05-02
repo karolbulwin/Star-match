@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../logo.svg";
+import start from "../images/star.svg";
 
 import { utils } from "../utils";
 export const StarsDisplay = props => (
